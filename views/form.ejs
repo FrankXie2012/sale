@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/">商品查询</a>
+  	<h2><%= title %></h2>
+    <% if (title=="商品新增") { %>
+      <form method="post">
+        名称：<input type="text" name="name" /><br><br>
+        价格：<input type="text" name="price" /><br><br>
+        详情：<input type="text" name="details" /><br><br>
+        <input type="submit" value="新增" />
+      </form>
+    <% } else { %>
+    	<form method="post">
+    		名称：<input type="text" name="name" value="<%= product.name %>" readonly="readonly" /><br><br>
+    		价格：<input type="text" name="price" value="<%= product.price %>" /><br><br>
+    		详情：<input type="text" name="details" value="<%= product.details %>" /><br><br>
+        <input type="submit" value="修改" />
+    	</form>
+    <% } %>
+  </body>
+</html>

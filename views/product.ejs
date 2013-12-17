@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="cGreen">
+      <% if (success) { %>
+          <%= success %>
+      <% } %>
+      <% if (error) { %>
+          <%= error %>
+      <% } %>
+    </div>
+    <a href="/new">商品新增</a>
+    <a href="/">商品查询</a>
+    <h2><%= title %></h2>
+    <i><%= product.price %></i><br><br>
+    <b><%= product.details %></b><br><br>
+    <a href="/edit/<%= product.name %>">编辑该商品</a><br>
+    <a href="/delete/<%= product.name %>">删除该商品</a>
+  </body>
+</html>

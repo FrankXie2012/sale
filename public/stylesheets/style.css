@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Alex Brush", 微软雅黑, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+a:hover{
+	color: #8080FF;
+}
+
+.cGreen{
+	color: #80FF00;
+}
+
+.item{
+	text-align: center;
+	width: 30%;
+	height: 100px;
+	line-height: 50px;
+	margin: 1.5%;
+	border: 1px solid black;
+	border-radius: 10px;
+	float: left;
+	cursor: pointer;
+}
+
+.item:hover{
+	background-color: #FF8000;
+}
